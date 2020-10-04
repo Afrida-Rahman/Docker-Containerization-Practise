@@ -1,0 +1,15 @@
+docker run --name m_db -p 4080:27017 mongo
+docker run --name nginX -p 4090:80 nginx
+docker run --name abc alpine(not working)
+
+docker network ls
+
+docker network create myNetwork
+docker network connect myNetwork nginX
+docker network connect myNetwork m_db
+
+docker network inspect myNetwork
+
+(both not working)
+docker exec -it myNetwork ping nginX
+docker exec -it m_db ping nginX
