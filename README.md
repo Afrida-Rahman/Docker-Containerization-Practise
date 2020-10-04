@@ -1,6 +1,6 @@
 # Docker_Containerization_Practise
 
-This repository covers the basic concepts of Docker Containerization (Docker networking and Docker compose).\
+This repository covers the basic concepts of Docker Containerization (Docker networking and Docker compose).
   * Creating node image
   * Creating bash image
   * Containerization express application
