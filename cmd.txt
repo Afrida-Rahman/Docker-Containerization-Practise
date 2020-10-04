@@ -1,0 +1,36 @@
+docker hub login steps:
+-------------------------
+docker login -u <your docker id>  --password <your docker password>
+
+1.
+docker build .
+docker run -it d901e4d15263
+
+for check:  console.log('hi');
+
+2.
+docker build .
+docker run 66e867a1504d -c ls
+or, simply
+docker run -it 66e867a1504d
+
+for check :  echo 'hi'
+
+3.
+docker build .
+docker run -p 3000:3000  66e867a1504d
+
+4.
+docker build -f Dockerfile.dev .
+docker run -p 8080:3000 -v /usr/app/node_modules -v %cd%:/usr/app 0e812c64c036
+
+5.
+docker build .
+docker run -p 8080:80 -v /usr/app/node_modules -v %cd%:/usr/app 0e812c64c036
+
+6.
+docker-compose up
+
+7.full
+docker-compose up -d (for 1st time)
+docker-compose up --build -d (if do any modify in code)
