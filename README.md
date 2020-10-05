@@ -22,24 +22,24 @@ This repository covers the basic concepts of Docker Containerization (Docker net
       
    -> Error : 
 
-      Building api\
-      Traceback (most recent call last):\
-        File "docker-compose", line 3, in <module>\
-        File "compose\cli\main.py", line 67, in main\
-        File "compose\cli\main.py", line 126, in perform_command\
-        File "compose\cli\main.py", line 1070, in up\
-        File "compose\cli\main.py", line 1066, in up\
-        File "compose\project.py", line 615, in up\
-        File "compose\service.py", line 362, in ensure_image_exists\
-        File "compose\service.py", line 1124, in build\
-        File "site-packages\docker\api\build.py", line 261, in build\
-        File "site-packages\docker\api\build.py", line 308, in _set_auth_headers\
-        File "site-packages\docker\auth.py", line 311, in get_all_credentials\
-        File "site-packages\docker\auth.py", line 262, in _resolve_authconfig_credstore\
-        File "site-packages\docker\auth.py", line 287, in _get_store_instance\
-        File "site-packages\docker\credentials\store.py", line 25, in __init__\
-      docker.credentials.errors.InitializationError: docker-credential-gcloud not installed or not available in PATH\
-      [7436] Failed to execute script docker-compose\
+      Building api
+      Traceback (most recent call last):
+        File "docker-compose", line 3, in <module>
+        File "compose\cli\main.py", line 67, in main
+        File "compose\cli\main.py", line 126, in perform_command
+        File "compose\cli\main.py", line 1070, in up
+        File "compose\cli\main.py", line 1066, in up
+        File "compose\project.py", line 615, in up
+        File "compose\service.py", line 362, in ensure_image_exists
+        File "compose\service.py", line 1124, in build
+        File "site-packages\docker\api\build.py", line 261, in build
+        File "site-packages\docker\api\build.py", line 308, in _set_auth_headers
+        File "site-packages\docker\auth.py", line 311, in get_all_credentials
+        File "site-packages\docker\auth.py", line 262, in _resolve_authconfig_credstore
+        File "site-packages\docker\auth.py", line 287, in _get_store_instance
+        File "site-packages\docker\credentials\store.py", line 25, in __init__
+      docker.credentials.errors.InitializationError: docker-credential-gcloud not installed or not available in PATH
+      [7436] Failed to execute script docker-compose
 
      Solved: by installing google cloud sdk ( https://cloud.google.com/sdk/docs/install )
 
