@@ -39,7 +39,7 @@ This repository covers the basic concepts of Docker Containerization (Docker net
        File "site-packages\docker\credentials\store.py", line 25, in __init__\
      docker.credentials.errors.InitializationError: docker-credential-gcloud not installed or not available in PATH\
      [7436] Failed to execute script docker-compose\
-
+     Solved : By installing Google cloud sdk ( https://cloud.google.com/sdk/docs/install)
    
    
    
